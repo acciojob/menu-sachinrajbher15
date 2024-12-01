@@ -1,14 +1,43 @@
-import React from 'react'
-import '../styles/MenuItemCard.css'
+// import React from 'react'
+// import '../styles/MenuItemCard.css'
 
-function MenuItemCard({item}) {
+// function MenuItemCard({item}) {
+//   const handleAddToCart = () => {
+//     console.log(item.id);
+//   }
+//   return (
+//     <div className='card'>
+//       <div className='item-image'>
+//         <img src={item.img} alt="item" />
+//       </div>
+//       <div className='card-content'>
+//         <div className='card-header'>
+//           <h2 id='item-title'>{item.title}</h2>
+//           <p id="item-price">$ {item.price}</p>
+//         </div>
+//         <div className='card-description'>
+//           <p id="item-description">{item.desc}</p>
+//         </div>
+//         <button id='addToCart-btn' onClick={handleAddToCart}>Add To Cart</button>
+//       </div>
+//     </div>
+//   )
+// }
+
+// export default MenuItemCard
+
+import React from 'react';
+import '../styles/MenuItemCard.css';
+
+function MenuItemCard({ item }) {
   const handleAddToCart = () => {
     console.log(item.id);
-  }
+  };
+
   return (
-    <div className='card'>
+    <div className='card' data-test-id={`menu-item-${item.category.toLowerCase()}`}>
       <div className='item-image'>
-        <img src={item.img} alt="item" />
+        <img src={item.img} alt={item.title} />
       </div>
       <div className='card-content'>
         <div className='card-header'>
@@ -21,7 +50,7 @@ function MenuItemCard({item}) {
         <button id='addToCart-btn' onClick={handleAddToCart}>Add To Cart</button>
       </div>
     </div>
-  )
+  );
 }
 
-export default MenuItemCard
+export default MenuItemCard;
