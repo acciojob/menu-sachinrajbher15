@@ -18,10 +18,10 @@ function App() {
       <h1>Our Menu</h1>
       <div className='header'>
         <ul>
-          <li onClick={() => setSelectedCategory('All')} className={selectedCategory === 'All' ? 'selected' : ''}>All</li>
-          <li onClick={() => setSelectedCategory('Breakfast')} className={selectedCategory === 'Breakfast' ? 'selected' : ''}>Breakfast</li>
-          <li onClick={() => setSelectedCategory('Lunch')} className={selectedCategory === 'Lunch' ? 'selected' : ''}>Lunch</li>
-          <li onClick={() => setSelectedCategory('Shakes')} className={selectedCategory === 'Shakes' ? 'selected' : ''}>Shakes</li>
+          <li id='main' onClick={() => setSelectedCategory('All')} className={selectedCategory === 'All' ? 'selected' : ''}>All</li>
+          <li id='filter-btn-1' onClick={() => setSelectedCategory('Breakfast')} className={selectedCategory === 'Breakfast' ? 'selected' : ''}>Breakfast</li>
+          <li id='filter-btn-2' onClick={() => setSelectedCategory('Lunch')} className={selectedCategory === 'Lunch' ? 'selected' : ''}>Lunch</li>
+          <li id='filter-btn-3' onClick={() => setSelectedCategory('Shakes')} className={selectedCategory === 'Shakes' ? 'selected' : ''}>Shakes</li>
         </ul>
       </div>
       <div className='menu-container'>

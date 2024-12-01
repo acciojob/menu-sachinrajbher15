@@ -58,6 +58,14 @@ h1 {
     gap: 20px;
 }
 
+/* Keep below code as it is */
+#main{}
+#filter-btn-1{}
+#filter-btn-2{}
+#filter-btn-3{}
+
+
+/* Responsive */
 
 @media screen and (max-width: 768px) {
     .header ul {
